@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/posterRightMargin"/>
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/poster"
+            android:layout_toEndOf="@id/poster"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titleSize"/>
+
+        <!-- what if the poster was really small, do I need to add toRightOf poster
+        Needed regardless or it will overlap the poster
+        -->
+        <TextView
+            android:id="@+id/movieDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieTitle"
+            android:layout_toEndOf="@id/poster"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</merge>

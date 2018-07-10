@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicSplit</string>
+    <string name="movie_base_url"> https://api.themoviedb.org/3/</string>
+    <string name="play_trailer">PLAY</string>
+</resources>

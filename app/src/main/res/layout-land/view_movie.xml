@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black">
+        <FrameLayout
+            android:id="@+id/posterSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/posterRightMargin">
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/playBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/play_trailer"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/posterSection"
+            android:layout_toEndOf="@id/posterSection"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/white"
+        />
+
+        <!-- what if the poster was really small, do I need to add toRightOf poster
+        Needed regardless or it will overlap the poster
+        -->
+        <TextView
+            android:id="@+id/movieDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieTitle"
+            android:layout_toEndOf="@id/posterSection"
+            android:textColor="@color/white"
+        />
+    </RelativeLayout>
+</merge>
+
